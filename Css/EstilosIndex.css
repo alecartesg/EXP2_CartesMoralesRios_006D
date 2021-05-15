@@ -194,12 +194,20 @@ nav #icon{
     }
 
 }
+/*Enlace a API*/
+.form-api{
+    padding: 0 100px;
+    color: white;
+    text-align: justify;
+    
+}
 
 /* footer */
 
 .container {
     max-width: 1170px;
     margin: auto;
+    box-sizing: border-box;
 }
 
 .row {
