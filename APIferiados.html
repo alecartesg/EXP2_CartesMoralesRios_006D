@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="icon" type="image/png" href="img/abogato.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="Css/EstilosAPI.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Feriados</title>
@@ -17,11 +18,11 @@
 
                 $.get("https://apis.digital.gob.cl/fl/feriados/2021",
                     function(data){
-                        
+
                         $.each(data,function(i,item){
                             $("#fechas").append("<tr><td>"+ item.nombre + "" + "</td><td>"+ item.fecha +
                             "</td><td>" + item.tipo + "</td></tr>");
-                            
+
 
                         });
 
@@ -55,12 +56,12 @@
         <p id="feriado"></p>
             <br>
         <p id="feriado2"></p>
-        
+
         <br><br>
-    
-   
+
+
         <button type="button" class="btn" id="enviar"> Revisa Aquí </button>
-        
+
     </div>
     <div class="form-devolverse"><br>
         <b><p>¿ Quieres volver al inicio ?<a class="link" href="MenuPrincipal02.html"> Ir a inicio</a></p></b>
@@ -80,6 +81,6 @@
         </tbody>
 
     </table>
-    
+
 </body>
 </html>
